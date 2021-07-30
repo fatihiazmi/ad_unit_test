@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: HWTArtz;
+}
+
+@font-face {
+  font-family: Gotham;
+  src: url("fonts/GothamRounded-Medium.woff");
+}
+
+@font-face {
+  font-family: HWTArtz;
+  src: url("fonts/HWTArtz.woff");
+}
+
+.text {
+  padding: 40px;
+  background: #eee;
+}
+
+.text h3 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 15px;
+  padding: 10px;
+}
+
+.ad-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ad-container .ad-before,
+.ad-container .ad-after {
+  display: flex;
+  justify-content: center;
+  background: rgb(179, 105, 165);
+  width: 300px;
+  height: 600px;
+  flex-wrap: wrap;
+  overflow: hidden;
+}
+
+.ad-before {
+  position: absolute;
+}
+
+.ad-after {
+  visibility: hidden;
+}
+
+img {
+  max-width: 100%;
+}
+
+.clr-block {
+  position: relative;
+  bottom: 30%;
+}
+
+.logo,
+.logo img {
+  position: relative;
+  bottom: 80%;
+  height: 80px;
+}
+
+.stripes-1 {
+  position: relative;
+  bottom: 9%;
+}
+.stripes-2 {
+  position: relative;
+  bottom: 90%;
+}
+
+.headline-1,
+.headline-after {
+  margin-top: 70px;
+  padding: 0 20px;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(228, 228, 228);
+  transform: rotate(-15deg);
+}
+
+.headline-after {
+  position: absolute;
+  max-width: 300px;
+}
+
+.headline-2 {
+  position: relative;
+  bottom: 80%;
+  text-align: center;
+  color: rgb(228, 228, 228);
+  z-index: 10;
+  font-size: 50px;
+  transform: rotate(-15deg);
+}
+.product {
+  z-index: 2;
+}
+.product img {
+  height: 300px;
+  position: relative;
+  top: 15%;
+}
+
+button {
+  border: none;
+  font-family: Gotham;
+  font-weight: bold;
+  padding: 10px 20px;
+  background-color: rgb(212, 155, 30);
+  color: #eee;
+  position: relative;
+  bottom: 2%;
+}
+
+button:hover {
+  cursor: pointer;
+}
